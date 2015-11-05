@@ -1,4 +1,4 @@
-# Blogfoster Front-end Application Boilerplace
+# Front-end Application Boilerplate
 
 The boilerplate we are using build awesome web native applications.
 
