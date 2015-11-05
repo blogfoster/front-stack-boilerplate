@@ -1,0 +1,11 @@
+{
+  "name": "front-stack",
+  "version": "1.0.0",
+  "description": "The boilerplate we are using build awesome web native applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alexander.beletsky@blogfoster.com",
+  "license": "ISC"
+}
