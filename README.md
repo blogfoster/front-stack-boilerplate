@@ -24,4 +24,4 @@ $ npm start
 
 ## References
 
-* [Frontend Engineering Stack](https://github.com/blogfoster/blogfoster-engineering/wiki/Frontend-Engineering-Stack)
+* [Front-end Engineering Stack](https://github.com/blogfoster/blogfoster-engineering/wiki/Frontend-Engineering-Stack)

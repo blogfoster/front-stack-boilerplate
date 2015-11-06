@@ -1,4 +1,5 @@
 {
+    "esnext": true,
     "asi" : false,
     "bitwise" : true,
     "boss" : false,
@@ -26,6 +27,5 @@
     "sub": false,
     "trailing" : true,
     "undef": true,
-    "unused": "vars",
-    "esnext": true
+    "unused": "vars"
 }
