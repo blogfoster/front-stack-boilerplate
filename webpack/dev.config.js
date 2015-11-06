@@ -1,37 +1,41 @@
 var webpack = require('webpack');
 // var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-  debug: true,
-  devtool: 'inline-source-map',
+var port = process.env.NODE_PORT || 3000;
 
-  entry: './source/router',
+module.exports = {
+  devtool: 'eval',
+
+  entry: [
+    'webpack-dev-server/client?http://localhost:' + port,
+    'webpack/hot/only-dev-server',
+    './source/router'
+  ],
 
   output: {
     filename: 'app.js',
-    path: './source/build'
-  },
-
-  module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        presets: ['es2015', 'react']
-      }
-    }]
+    path: './source/build',
+    publicPath: '/build/'
   },
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
 
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      loaders: ['react-hot', 'babel'],
+      exclude: /node_modules/
+    }]
+  },
+
   devServer: {
     contentBase: './source',
     historyApiFallback: true,
     hot: true,
     inline: true,
-    progress: true
+    progress: true,
+    port: port
   }
 };
