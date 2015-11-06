@@ -25,3 +25,5 @@ $ npm start
 ## References
 
 * [Front-end Engineering Stack](https://github.com/blogfoster/blogfoster-engineering/wiki/Frontend-Engineering-Stack)
+* [Setting Up Webpack for React and Hot Module Replacement](https://robots.thoughtbot.com/setting-up-webpack-for-react-and-hot-module-replacement)
+* [Survive.js](http://survivejs.com/webpack_react/introduction/)
