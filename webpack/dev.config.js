@@ -4,7 +4,7 @@ var webpack = require('webpack');
 var port = process.env.NODE_PORT || 3000;
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'eval-source-map',
 
   entry: [
     'webpack-dev-server/client?http://localhost:' + port,
