@@ -6,4 +6,4 @@ export default class App extends Component {
       <h1>Hello world</h1>
     );
   }
-}
+};

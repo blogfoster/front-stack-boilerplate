@@ -1,6 +1,10 @@
+var webpack = require('webpack');
 // var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  debug: true,
+  devtool: 'inline-source-map',
+
   entry: './source/router',
 
   output: {
@@ -20,7 +24,7 @@ module.exports = {
   },
 
   plugins: [
-
+    new webpack.HotModuleReplacementPlugin(),
   ],
 
   devServer: {
