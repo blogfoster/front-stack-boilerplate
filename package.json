@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --verbose --colors --display-error-details --config webpack/dev.config.js"
+    "build": "webpack --verbose --colors --display-error-details --config webpack/dev.config.js",
+    "start": "webpack-dev-server --config webpack/dev.config.js"
   },
   "author": "alexander.beletsky@blogfoster.com",
   "license": "ISC",
@@ -23,10 +24,12 @@
     "babel-plugin-react-transform": "^1.1.1",
     "babel-preset-es2015": "^6.1.2",
     "babel-preset-react": "^6.1.2",
+    "html-webpack-plugin": "^1.6.2",
     "mocha": "^2.3.3",
     "react-transform-catch-errors": "^1.0.0",
     "should": "^7.1.1",
     "sinon": "^1.17.2",
-    "webpack": "^1.12.3"
+    "webpack": "^1.12.3",
+    "webpack-dev-server": "^1.12.1"
   }
 }
