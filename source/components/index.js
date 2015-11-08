@@ -1,1 +1,2 @@
-export HelloWorld from './HelloWorld';
+export SignUp from './SignUp';
+export BlogFosterLogo from './BlogFosterLogo';
