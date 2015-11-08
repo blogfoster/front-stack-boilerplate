@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "babel": "^6.0.15",
+    "history": "^1.13.0",
     "material-ui": "^0.13.1",
     "react": "^0.14.2",
     "react-addons-create-fragment": "^0.14.2",
@@ -20,7 +21,7 @@
     "react-addons-update": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-redux": "^4.0.0",
-    "react-router": "^0.13.5",
+    "react-router": "^1.0.0-rc4",
     "redux": "^3.0.4"
   },
   "devDependencies": {
