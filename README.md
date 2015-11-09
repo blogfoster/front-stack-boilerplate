@@ -22,6 +22,20 @@ Launch application,
 $ npm start
 ```
 
+Open in browser,
+
+```bash
+$ open http://localhost:3000
+```
+
+## Project Structure
+
+The sources of application is located in `/source` folder. The distributive version will be placed to `/public` folder after build. Normally, you should always use development configuration and build public version right before the deployment.
+
+### [/source/index.html](/source/index.html)
+
+The `index.html` file, references some CDN resources, fonts, 3rd party CSS files.
+
 ## References
 
 * [Front-end Engineering Stack](https://github.com/blogfoster/blogfoster-engineering/wiki/Frontend-Engineering-Stack)
