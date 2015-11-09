@@ -36,15 +36,15 @@ The sources of application is located in `/source` folder. The distributive vers
 
 The `index.html` file, references some CDN resources, fonts, 3rd party CSS files.
 
-### [/source/router]
+### [/source/router](/source/router)
 
 The entry point of application. Initializes `router` and renders the application to `#main` div.
 
-### [/source/containers]
+### [/source/containers](/source/containers)
 
 The [smart]() components of application. Setting up the layout of `components` and manage the state.
 
-### [/source/components]
+### [/source/components](/source/components)
 
 The [dump]() components, with own style, initialized via properties, stateless.
 
