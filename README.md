@@ -48,6 +48,10 @@ The [smart]() components of application. Setting up the layout of `components` a
 
 The [dump]() components, with own style, initialized via properties, stateless.
 
+### [/source/redux](/source/redux)
+
+The [redux]() related code, including actions and reducers.
+
 ## References
 
 * [Front-end Engineering Stack](https://github.com/blogfoster/blogfoster-engineering/wiki/Frontend-Engineering-Stack)
