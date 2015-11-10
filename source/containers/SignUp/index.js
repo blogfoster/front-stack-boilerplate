@@ -1,15 +1,26 @@
-import React, {Component} from 'react';
+import React, { Component, PropTypes } from 'react';
 
 import {
   SignUpForm
 } from '../../components';
 
-export default class SignUp extends Component {
+class SignUp extends Component {
+  static contextTypes = {
+    store: PropTypes.any,
+    history: PropTypes.object.isRequired
+  }
+
+  handleSignUp() {
+    const { history, store } = this.context;
+  }
+
   render() {
     return (
       <div>
-        <SignUpForm></SignUpForm>
+        <SignUpForm />
       </div>
     );
   }
 }
+
+export default SignUp;

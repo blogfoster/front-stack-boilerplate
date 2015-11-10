@@ -7,7 +7,7 @@ import {BlogFosterLogo} from '../';
 
 import AccountDetails from './AccountDetails';
 
-export default class HelloWorld extends Component {
+export default class SignUpForm extends Component {
   render() {
     return (
       <div className="sign-up-wizard">
