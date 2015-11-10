@@ -1,21 +1,22 @@
+import 'babel-polyfill';
+
 import React from 'react';
 import ReactDom from 'react-dom';
 
 import Router, {Route} from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 
-import {App} from '../containers';
+import {
+  App,
+  SignUp
+} from '../containers';
 
-let renderRoutes = (element) => {
-  const Routes = (
-    <Router history={createBrowserHistory()}>
-      <Route path="/" component={App}></Route>
-    </Router>
-  );
+const Routes = (
+  <Router history={createBrowserHistory()}>
+    <Route path="/" component={App}>
+      <Route path="sign-up" component={SignUp}></Route>
+    </Route>
+  </Router>
+);
 
-  ReactDom.render(Routes, element);
-};
-
-let root = document.getElementById('main');
-
-renderRoutes(root);
+ReactDom.render(Routes, document.getElementById('main'));

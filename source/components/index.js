@@ -1,2 +1,2 @@
-export SignUp from './SignUp';
+export SignUpForm from './SignUpForm';
 export BlogFosterLogo from './BlogFosterLogo';

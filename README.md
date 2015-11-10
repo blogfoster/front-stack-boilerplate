@@ -52,10 +52,14 @@ The [dump]() components, with own style, initialized via properties, stateless.
 
 The [redux]() related code, including actions and reducers.
 
-## References
+## Materials
 
 * [Front-end Engineering Stack](https://github.com/blogfoster/blogfoster-engineering/wiki/Frontend-Engineering-Stack)
 * [Setting Up Webpack for React and Hot Module Replacement](https://robots.thoughtbot.com/setting-up-webpack-for-react-and-hot-module-replacement)
 * [Survive.js](http://survivejs.com/webpack_react/introduction/)
 * [Atomic Web Design](http://bradfrost.com/blog/post/atomic-web-design/)
 * [Smart and Dumb components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+
+## Repos
+
+* [redux-react-router-async-example](https://github.com/emmenko/redux-react-router-async-example)

@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "babel": "^6.0.15",
+    "babel-polyfill": "^6.0.16",
     "history": "^1.13.0",
+    "isomorphic-fetch": "^2.2.0",
     "material-ui": "^0.13.1",
     "react": "^0.14.2",
     "react-addons-create-fragment": "^0.14.2",
