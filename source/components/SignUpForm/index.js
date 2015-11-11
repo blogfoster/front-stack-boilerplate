@@ -1,9 +1,9 @@
 import './SignUp.scss';
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import {Paper} from 'material-ui';
-import {BlogFosterLogo} from '../';
+import { Paper } from 'material-ui';
+import { BlogFosterLogo } from '../';
 
 import AccountDetails from './AccountDetails';
 
@@ -13,7 +13,7 @@ export default class SignUpForm extends Component {
       <div className="sign-up-wizard">
         <Paper zDepth={3}>
           <div className="content">
-            <BlogFosterLogo align="center"></BlogFosterLogo>
+            <BlogFosterLogo align="center" />
             <hr />
             <AccountDetails />
           </div>

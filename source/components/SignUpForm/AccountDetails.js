@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import {TextField} from 'material-ui';
-import {RaisedButton} from 'material-ui';
+import { TextField } from 'material-ui';
+import { RaisedButton } from 'material-ui';
 
 export default class AccountDetails extends Component {
   render() {
@@ -25,7 +25,7 @@ export default class AccountDetails extends Component {
               <TextField hintText="What's your last name?" floatingLabelText="Last Name" />
               <TextField hintText="Where is you blog hosted?" floatingLabelText="Blog URL" />
             </div>
-            <div className="password" style={{marginTop: '20px'}}>
+            <div className="password" style={{ marginTop: '20px' }}>
               <TextField hintText="Secret password" floatingLabelText="Password" />
               <TextField hintText="Secret password repeated" floatingLabelText="Repeat Password" />
             </div>
@@ -34,7 +34,7 @@ export default class AccountDetails extends Component {
 
         <div className="buttons cf">
           <div style={buttonsStyle}>
-            <RaisedButton label="Next" secondary={true} />
+            <RaisedButton label="Next" secondary/>
           </div>
         </div>
       </div>

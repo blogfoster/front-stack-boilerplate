@@ -1,8 +1,8 @@
 import './HelloWorld.scss';
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import {Paper} from 'material-ui';
+import { Paper } from 'material-ui';
 
 export default class HelloWorld extends Component {
   render() {

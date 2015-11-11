@@ -1,6 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component, PropTypes } from 'react';
 
 export default class BlogFosterLogo extends Component {
+  static propTypes = {
+    align: PropTypes.string
+  }
+
   render() {
     const style = {
       width: 50,
@@ -8,7 +12,7 @@ export default class BlogFosterLogo extends Component {
     };
 
     return (
-      <div className="blogfoster-logo-container" style={{width: '100%', textAlign: this.props.align}}>
+      <div className="blogfoster-logo-container" style={{ width: '100%', textAlign: this.props.align }}>
         <img src="/images/logo.png" alt="blogfoster" style={style}/>
       </div>
     );

@@ -11,7 +11,7 @@ class SignUp extends Component {
   }
 
   handleSignUp() {
-    const { history, store } = this.context;
+    // const { history, store } = this.context;
   }
 
   render() {

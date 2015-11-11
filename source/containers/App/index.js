@@ -1,19 +1,23 @@
 import './App.scss';
 
-import React, {Component} from 'react';
+import React, { Component, PropTypes } from 'react';
 
-import {Styles} from 'material-ui';
+import { Styles } from 'material-ui';
 
-import {Provider} from 'react-redux';
-import {createStore} from 'redux';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-let reducer = (state, action) => {
+const reducer = (state) => {
   return state;
 };
 
-let store = createStore(reducer);
+const store = createStore(reducer);
 
 export default class App extends Component {
+  static propTypes = {
+    children: PropTypes.any
+  }
+
   render() {
     const style = {
       backgroundColor: Styles.Colors.redA400
