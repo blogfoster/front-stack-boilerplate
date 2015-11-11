@@ -18,8 +18,6 @@ import {
   SignUp
 } from '../containers';
 
-console.log(reducers);
-
 const getRoutes = (/* { dispatch, getState } */) => {
   function requireAuth(/* nextState, replaceState */) {
     // console.log(getState());
