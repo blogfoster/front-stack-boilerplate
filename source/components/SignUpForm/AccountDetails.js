@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { TextField } from 'material-ui';
 import { RaisedButton } from 'material-ui';
 
-export default class AccountDetails extends Component {
+class AccountDetails extends Component {
   render() {
     const fieldsStyle = {
       width: 50 + '%',
@@ -41,3 +41,5 @@ export default class AccountDetails extends Component {
     );
   }
 }
+
+export default AccountDetails;

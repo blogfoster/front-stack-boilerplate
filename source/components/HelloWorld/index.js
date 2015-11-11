@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 import { Paper } from 'material-ui';
 
-export default class HelloWorld extends Component {
+class HelloWorld extends Component {
   render() {
     return (
       <div className="sign-up-wizard">
@@ -15,3 +15,5 @@ export default class HelloWorld extends Component {
     );
   }
 }
+
+export default HelloWorld;

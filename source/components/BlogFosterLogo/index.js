@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-export default class BlogFosterLogo extends Component {
+class BlogFosterLogo extends Component {
   static propTypes = {
     align: PropTypes.string
   }
@@ -18,3 +18,5 @@ export default class BlogFosterLogo extends Component {
     );
   }
 }
+
+export default BlogFosterLogo;

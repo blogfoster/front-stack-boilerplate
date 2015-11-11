@@ -24,7 +24,9 @@
     "react-dom": "^0.14.2",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.0-rc4",
-    "redux": "^3.0.4"
+    "redux": "^3.0.4",
+    "redux-router": "^1.0.0-beta4",
+    "redux-thunk": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.1.2",

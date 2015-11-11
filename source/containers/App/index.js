@@ -4,16 +4,7 @@ import React, { Component, PropTypes } from 'react';
 
 import { Styles } from 'material-ui';
 
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-
-const reducer = (state) => {
-  return state;
-};
-
-const store = createStore(reducer);
-
-export default class App extends Component {
+class App extends Component {
   static propTypes = {
     children: PropTypes.any
   }
@@ -24,11 +15,12 @@ export default class App extends Component {
     };
 
     return (
-      <Provider store={store}>
-        <div id="app" style={style}>
-          {this.props.children}
-        </div>
-      </Provider>
+      <div id="app" style={style}>
+        <h1>App</h1>
+        {this.props.children}
+      </div>
     );
   }
 }
+
+export default App;

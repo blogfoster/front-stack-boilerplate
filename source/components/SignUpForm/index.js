@@ -7,7 +7,7 @@ import { BlogFosterLogo } from '../';
 
 import AccountDetails from './AccountDetails';
 
-export default class SignUpForm extends Component {
+class SignUpForm extends Component {
   render() {
     return (
       <div className="sign-up-wizard">
@@ -22,3 +22,5 @@ export default class SignUpForm extends Component {
     );
   }
 }
+
+export default SignUpForm;
