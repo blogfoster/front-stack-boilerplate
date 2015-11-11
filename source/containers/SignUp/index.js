@@ -15,6 +15,10 @@ class SignUp extends Component {
   }
 
   render() {
+    const { history, store } = this.context;
+
+    console.log(store.getState());
+
     return (
       <div>
         <SignUpForm />

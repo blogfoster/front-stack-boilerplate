@@ -11,25 +11,14 @@ import { Provider } from 'react-redux';
 import { compose, combineReducers, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
+import * as reducers from '../redux/reducers';
+
 import {
   App,
   SignUp
 } from '../containers';
 
-const initialState = {
-  application: {
-    currentUser: null
-  }
-};
-
-const reducer = (state = initialState) => {
-  return state;
-};
-
-const rootReducer = combineReducers({
-  reducer,
-  router
-});
+console.log(reducers);
 
 const getRoutes = (/* { dispatch, getState } */) => {
   function requireAuth(/* nextState, replaceState */) {
@@ -51,6 +40,8 @@ const configureStore = compose(
     createHistory
   })
 )(createStore);
+
+const rootReducer = combineReducers({ router, ...reducers });
 
 const store = configureStore(rootReducer);
 
