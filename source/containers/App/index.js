@@ -16,7 +16,6 @@ class App extends Component {
 
     return (
       <div id="app" style={style}>
-        <h1>App</h1>
         {this.props.children}
       </div>
     );

@@ -31,8 +31,8 @@ const rootReducer = combineReducers({
   router
 });
 
-const getRoutes = ({ dispatch, getState }) => {
-  function requireAuth(nextState, replaceState) {
+const getRoutes = (/* { dispatch, getState } */) => {
+  function requireAuth(/* nextState, replaceState */) {
     // console.log(getState());
   }
 
