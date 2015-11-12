@@ -6,12 +6,15 @@ import { Paper, CircularProgress } from 'material-ui';
 import { BlogFosterLogo } from '../';
 
 import AccountDetails from './AccountDetails';
+import BloggingPreferences from './BloggingPreferences';
 
 class SignUpWizard extends Component {
   static propTypes = {
     user: PropTypes.object,
     progressing: PropTypes.bool,
-    onSignUp: PropTypes.func
+    onSignUp: PropTypes.func,
+    onPreferenceSelected: PropTypes.func,
+    onPreferencesCompleted: PropTypes.func
   }
 
   render() {
@@ -19,8 +22,12 @@ class SignUpWizard extends Component {
       progressing
     } = this.props;
 
-    const currentStep = (
+    const accountStep = (
       <AccountDetails onSignUp={this.props.onSignUp} />
+    );
+
+    const bloggingPreferencesStep = (
+      <BloggingPreferences onPreferenceSelected={this.props.onPreferenceSelected} onCompleted={this.props.onPreferencesCompleted} />
     );
 
     const progress = (
@@ -29,7 +36,9 @@ class SignUpWizard extends Component {
       </div>
     );
 
-    const content = progressing ? progress : currentStep;
+    const stepSelector = this.props.user ? bloggingPreferencesStep : accountStep;
+
+    const content = progressing ? progress : stepSelector;
 
     return (
       <div className="sign-up-wizard">
