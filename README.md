@@ -62,4 +62,5 @@ The [redux]() related code, including actions and reducers.
 
 ## Repos
 
-* [redux-react-router-async-example](https://github.com/emmenko/redux-react-router-async-example)
+* [emmenko/redux-react-router-async-example](https://github.com/emmenko/redux-react-router-async-example)
+* [joshgeller/react-redux-jwt-auth-example](https://github.com/joshgeller/react-redux-jwt-auth-example)

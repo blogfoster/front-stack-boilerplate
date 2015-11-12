@@ -21,22 +21,13 @@ class BloggingPreferences extends Component {
         <div style={{ height: 400, paddingTop: 50 }}>
           <ul style={{ listStyleType: 'none' }}>
             <li style={{ display: 'inline-block', paddingTop: 5, paddingBottom: 5, width: '33%' }}>
-              <Checkbox
-                name="food"
-                value="checkboxValue1"
-                label="Food blogger"/>
+              <Checkbox name="food" value="checkboxValue1" label="Food blogger"/>
             </li>
             <li style={{ display: 'inline-block', paddingTop: 5, paddingBottom: 5, width: '33%' }}>
-              <Checkbox
-                name="fashion"
-                value="checkboxValue1"
-                label="Fashion blogger"/>
+              <Checkbox name="fashion" value="checkboxValue1" label="Fashion blogger"/>
             </li>
             <li style={{ display: 'inline-block', paddingTop: 5, paddingBottom: 5, width: '33%' }}>
-              <Checkbox
-                name="food"
-                value="checkboxValue1"
-                label="Sports car blogger"/>
+              <Checkbox name="food" value="checkboxValue1" label="Sports car blogger"/>
             </li>
           </ul>
         </div>
