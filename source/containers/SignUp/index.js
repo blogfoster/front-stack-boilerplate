@@ -1,22 +1,30 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
+import { signUp } from '../../redux/actions';
+
 import {
   SignUpForm
 } from '../../components';
 
 class SignUp extends Component {
-  static contextTypes = {
-    store: PropTypes.any,
-    history: PropTypes.object.isRequired
+  static propTypes = {
+    dispatch: PropTypes.func,
+    application: PropTypes.object
+  }
+
+  onSignUp(errors, account) {
+    const { dispatch } = this.props;
+
+    console.log('dispatching', account);
+
+    //dispatch(signUp(account));
   }
 
   render() {
-    console.log(this.props);
-
     return (
       <div>
-        <SignUpForm />
+        <SignUpForm onSignUp={::this.onSignUp} />
       </div>
     );
   }

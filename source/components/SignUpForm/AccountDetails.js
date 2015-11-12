@@ -1,9 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 import { TextField } from 'material-ui';
 import { RaisedButton } from 'material-ui';
 
 class AccountDetails extends Component {
+  static propTypes = {
+    onSignUp: PropTypes.func
+  }
+
+  onSubmitted(evt) {
+    evt.preventDefault();
+
+    this.props.onSignUp(null, {});
+  }
+
   render() {
     const fieldsStyle = {
       width: 50 + '%',
@@ -17,7 +27,7 @@ class AccountDetails extends Component {
     };
 
     return (
-      <div>
+      <form onSubmit={::this.onSubmitted}>
         <div className="fields cf">
           <div style={fieldsStyle}>
             <div className="details">
@@ -34,10 +44,10 @@ class AccountDetails extends Component {
 
         <div className="buttons cf">
           <div style={buttonsStyle}>
-            <RaisedButton label="Next" secondary/>
+            <RaisedButton label="Next" type="submit" secondary/>
           </div>
         </div>
-      </div>
+      </form>
     );
   }
 }
