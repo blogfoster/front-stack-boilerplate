@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { signUp } from '../../redux/actions';
 
 import {
-  SignUpForm
+  SignUpWizard
 } from '../../components';
 
 class SignUp extends Component {
@@ -20,11 +20,9 @@ class SignUp extends Component {
   }
 
   render() {
-    console.log('SignUpForm render: application', this.props.application);
-
     return (
       <div>
-        <SignUpForm onSignUp={::this.onSignUp} />
+        <SignUpWizard onSignUp={::this.onSignUp} {...this.props.application} />
       </div>
     );
   }
