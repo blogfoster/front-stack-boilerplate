@@ -6,6 +6,9 @@ const initialState = {
 };
 
 const actionHandlers = {
+  'LOGGED_IN': (state, action) => {
+    return { ...state, user: action.user };
+  }
 };
 
 export default createReducer(initialState, actionHandlers);

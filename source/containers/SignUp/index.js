@@ -16,12 +16,12 @@ class SignUp extends Component {
   onSignUp(errors, account) {
     const { dispatch } = this.props;
 
-    console.log('dispatching', account);
-
-    //dispatch(signUp(account));
+    dispatch(signUp(account));
   }
 
   render() {
+    console.log('SignUpForm render: application', this.props.application);
+
     return (
       <div>
         <SignUpForm onSignUp={::this.onSignUp} />
