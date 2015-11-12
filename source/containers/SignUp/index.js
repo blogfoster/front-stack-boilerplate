@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
 
 import {
   SignUpForm
@@ -10,14 +11,8 @@ class SignUp extends Component {
     history: PropTypes.object.isRequired
   }
 
-  handleSignUp() {
-    // const { history, store } = this.context;
-  }
-
   render() {
-    const { history, store } = this.context;
-
-    console.log(store.getState());
+    console.log(this.props);
 
     return (
       <div>
@@ -27,4 +22,10 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp;
+const mapStateToProps = (state) => {
+  return {
+    application: state.application
+  };
+};
+
+export default connect(mapStateToProps)(SignUp);
