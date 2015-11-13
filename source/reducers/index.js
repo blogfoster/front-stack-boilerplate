@@ -1,4 +1,9 @@
-import createReducer from '../utils/createReducer';
+import { createReducer } from '../utils';
+
+import {
+  SIGNING_UP,
+  SIGNED_UP
+} from '../constants';
 
 const initialState = {
   user: null,
@@ -7,11 +12,11 @@ const initialState = {
 };
 
 const actionHandlers = {
-  'LOGGING_IN': (state) => {
+  [SIGNING_UP]: (state) => {
     return { ...state, user: null, progressing: true };
   },
 
-  'LOGGED_IN': (state, action) => {
+  [SIGNED_UP]: (state, action) => {
     return { ...state, user: action.user, progressing: false };
   }
 };
