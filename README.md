@@ -2,6 +2,8 @@
 
 The boilerplate we are using build awesome web native applications.
 
+There is a client application in [/source](/source) and test server in [/server](/server) folders.
+
 ## Installation
 
 Install dependencies,
