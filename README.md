@@ -48,9 +48,13 @@ The [smart]() components of application. Setting up the layout of `components` a
 
 The [dump]() components, with own style, initialized via properties, stateless.
 
-### [/source/redux](/source/redux)
+### [/source/actions](/source/actions)
 
-The [redux]() related code, including actions and reducers.
+The [redux/actions]() related code.
+
+### [/source/reducers](/source/reducers)
+
+The [redux/reducers]() related code.
 
 ## Materials
 
