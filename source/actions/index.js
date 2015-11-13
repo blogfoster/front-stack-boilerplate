@@ -45,3 +45,19 @@ export function signUp(account) {
       });
   };
 }
+
+export function selectPreference(preference) {
+  return (dispatch) => {
+    const url = config.url + '/api/users';
+
+    fetch(url, { method: 'patch', body: { preference: preference } })
+      .then(checkHttpStatus)
+      .then(parseJSON)
+      .then(response => {
+        // TODO:
+      })
+      .catch(error => {
+        // TODO
+      });
+  }
+}
