@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --verbose --colors --display-error-details --config webpack/dev.config.js",
-    "start": "node server/server & webpack-dev-server --config webpack/dev.config.js"
+    "start": "nodemon -w server server/server & webpack-dev-server --config webpack/dev.config.js"
   },
   "author": "alexander.beletsky@blogfoster.com",
   "license": "ISC",
