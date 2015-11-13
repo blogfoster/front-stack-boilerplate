@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { signUp } from '../../redux/actions';
+import { signUp } from '../../actions';
 
 import {
   SignUpWizard

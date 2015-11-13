@@ -10,7 +10,7 @@ import { reduxReactRouter, routerStateReducer as router, ReduxRouter } from 'red
 import createHistory from 'history/lib/createBrowserHistory';
 
 import { getRoutes } from './routes';
-import * as reducers from './redux/reducers';
+import * as reducers from './reducers';
 
 const rootReducer = combineReducers({ router, ...reducers });
 
