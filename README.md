@@ -66,7 +66,7 @@ The [redux/reducers]() related code.
 * [Atomic Web Design](http://bradfrost.com/blog/post/atomic-web-design/)
 * [Smart and Dumb components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
-## Repos
+## Inspired from
 
 * [emmenko/redux-react-router-async-example](https://github.com/emmenko/redux-react-router-async-example)
 * [joshgeller/react-redux-jwt-auth-example](https://github.com/joshgeller/react-redux-jwt-auth-example)
