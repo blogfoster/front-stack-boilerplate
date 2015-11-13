@@ -1,9 +1,6 @@
 import { createReducer } from '../utils';
 
-import {
-  SIGNING_UP,
-  SIGNED_UP
-} from '../constants';
+import constants from '../constants';
 
 const initialState = {
   user: null,
@@ -12,13 +9,19 @@ const initialState = {
 };
 
 const actionHandlers = {
-  [SIGNING_UP]: (state) => {
+  [constants.SIGNING_UP]: (state) => {
     return { ...state, user: null, progressing: true };
   },
 
-  [SIGNED_UP]: (state, action) => {
-    return { ...state, user: action.user, progressing: false };
+  [constants.SIGNED_UP]: (state, payload) => {
+    return { ...state, user: payload.account, progressing: false };
+  },
+
+  [constants.SIGNUP_ERROR]: (state, payload) => {
+    const errors = [payload.error].concat(state.errors);
+
+    return { ...state, errors };
   }
 };
 
-export default createReducer(initialState, actionHandlers);
+export const application = createReducer(initialState, actionHandlers);

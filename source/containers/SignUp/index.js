@@ -20,6 +20,8 @@ class SignUp extends Component {
   }
 
   render() {
+    console.log('SignUpWizard - props', this.props);
+
     return (
       <div>
         <SignUpWizard onSignUp={::this.onSignUp} {...this.props.application} />

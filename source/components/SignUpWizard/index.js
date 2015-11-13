@@ -12,6 +12,7 @@ class SignUpWizard extends Component {
   static propTypes = {
     user: PropTypes.object,
     progressing: PropTypes.bool,
+    errors: PropTypes.array,
     onSignUp: PropTypes.func,
     onPreferenceSelected: PropTypes.func,
     onPreferencesCompleted: PropTypes.func
@@ -19,7 +20,7 @@ class SignUpWizard extends Component {
 
   render() {
     const {
-      progressing
+      progressing,
     } = this.props;
 
     const accountStep = (
