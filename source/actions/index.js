@@ -46,18 +46,28 @@ export function signUp(account) {
   };
 }
 
+export function preferenceSelected(preference) {
+  return { type: 'PREFERENCE_SELECTED', payload: preference };
+}
+
+export function preferenceSelectedError(error) {
+  return { type: 'PREFERENCE_SELECTED_ERROR', payload: error };
+}
+
 export function selectPreference(preference) {
   return (dispatch) => {
     const url = config.url + '/api/users';
 
-    fetch(url, { method: 'patch', body: { preference: preference } })
+    fetch(url, { method: 'patch', body: { preference: preference } } )
       .then(checkHttpStatus)
       .then(parseJSON)
       .then(response => {
         // TODO:
+        dispatch(preferenceSelected(response.data));
       })
       .catch(error => {
         // TODO
+        dispatch(preferenceSelectedError(error.data));
       });
-  }
+  };
 }
