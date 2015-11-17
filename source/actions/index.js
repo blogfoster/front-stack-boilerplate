@@ -34,11 +34,15 @@ export function signUp(account) {
   return (dispatch) => {
     const url = config.url + '/api/users';
 
+    dispatch(signingUp());
+
     fetch(url, { method: 'post', body: account })
       .then(checkHttpStatus)
       .then(parseJSON)
       .then(response => {
-        dispatch(signedUp(response));
+        setTimeout(() => {
+          dispatch(signedUp(response));
+        }, 1000);
       })
       .catch(error => {
         dispatch(signUpError(error));

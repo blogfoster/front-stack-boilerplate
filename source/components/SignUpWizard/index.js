@@ -45,7 +45,7 @@ class SignUpWizard extends Component {
       <div className="sign-up-wizard">
         <Paper zDepth={3}>
           <div className="content">
-            <BlogFosterLogo align="center" />
+            <BlogFosterLogo anything="xxx" align="center" />
             <hr />
             {content}
           </div>
