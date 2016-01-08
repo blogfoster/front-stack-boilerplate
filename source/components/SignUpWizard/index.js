@@ -16,7 +16,7 @@ class SignUpWizard extends Component {
     onSignUp: PropTypes.func,
     onPreferenceSelected: PropTypes.func,
     onPreferencesCompleted: PropTypes.func
-  }
+  };
 
   render() {
     const {

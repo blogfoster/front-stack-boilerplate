@@ -7,7 +7,7 @@ import { Styles } from 'material-ui';
 class App extends Component {
   static propTypes = {
     children: PropTypes.any
-  }
+  };
 
   render() {
     const style = {

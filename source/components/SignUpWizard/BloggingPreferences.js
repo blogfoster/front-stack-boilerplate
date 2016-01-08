@@ -1,12 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 import { RaisedButton, Checkbox } from 'material-ui';
 
 class BloggingPreferences extends Component {
-  static propTypes = {
-
-  }
-
   render() {
     const buttonsStyle = {
       marginTop: 30,

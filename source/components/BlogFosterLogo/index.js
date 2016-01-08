@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 class BlogFosterLogo extends Component {
   static propTypes = {
     align: PropTypes.string
-  }
+  };
 
   render() {
     const style = {

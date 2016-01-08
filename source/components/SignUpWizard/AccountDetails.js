@@ -6,7 +6,7 @@ import { RaisedButton } from 'material-ui';
 class AccountDetails extends Component {
   static propTypes = {
     onSignUp: PropTypes.func
-  }
+  };
 
   onSubmitted(evt) {
     evt.preventDefault();
@@ -39,6 +39,7 @@ class AccountDetails extends Component {
         <div className="fields cf">
           <div style={fieldsStyle}>
             <div className="details">
+              <h1>sdsdfsdsd</h1>
               <TextField ref="firstName" hintText="What's your first name?" floatingLabelText="First Name" />
               <TextField ref="lastName" hintText="What's your last name?" floatingLabelText="Last Name" />
               <TextField ref="url" hintText="Where is you blog hosted?" floatingLabelText="Blog URL" />

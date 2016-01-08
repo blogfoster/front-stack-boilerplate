@@ -11,7 +11,7 @@ class SignUp extends Component {
   static propTypes = {
     dispatch: PropTypes.func,
     application: PropTypes.object
-  }
+  };
 
   onSignUp(errors, account) {
     const { dispatch } = this.props;
@@ -20,8 +20,6 @@ class SignUp extends Component {
   }
 
   render() {
-    console.log('SignUpWizard - props', this.props);
-
     return (
       <div>
         <SignUpWizard onSignUp={::this.onSignUp} {...this.props.application} />
