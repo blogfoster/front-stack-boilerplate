@@ -1,6 +1,6 @@
-# Front-end Application Boilerplate
+# Front Stack Boilerplate
 
-The boilerplate we are using build awesome web native applications.
+The boilerplate we are using build *awesome* web native applications.
 
 There is a client application in [/source](/source) and test server in [/server](/server) folders.
 
@@ -70,3 +70,13 @@ The [redux/reducers]() related code.
 
 * [emmenko/redux-react-router-async-example](https://github.com/emmenko/redux-react-router-async-example)
 * [joshgeller/react-redux-jwt-auth-example](https://github.com/joshgeller/react-redux-jwt-auth-example)
+
+## Libraries and Tools
+
+* [Babel](https://babeljs.io/)
+* [React](https://facebook.github.io/react/)
+* [Redux](https://github.com/rackt/redux)
+* [ReduxRouter](https://github.com/acdlite/redux-router)
+* [ReduxThunk](https://github.com/gaearon/redux-thunk)
+* [Webpack](https://github.com/webpack/webpack)
+* [ESLint](http://eslint.org/)
