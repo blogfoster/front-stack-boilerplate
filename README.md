@@ -80,3 +80,7 @@ The [redux/reducers]() related code.
 * [ReduxThunk](https://github.com/gaearon/redux-thunk)
 * [Webpack](https://github.com/webpack/webpack)
 * [ESLint](http://eslint.org/)
+
+## License
+
+MIT team@blogfoster.com
